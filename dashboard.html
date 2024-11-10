@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoleSuite ERP - Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="cssmenu.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar (Same as the previous page) -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="logo.png" alt="Company Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html"></a><i class="fas fa-dashboard"></i> Dashboard</li>
+                    <li><a href="menu.html"></a><i class="fas fa-check-square"></i> Customer Management</li>
+                    <li><i class="fas fa-users"></i> Product Management</li>
+                    <li><i class="fas fa-box"></i> Inventory Managemnt</li>
+                    <li><i class="fas fa-project-diagram"></i> Order Management</li>
+                    <li><i class="fas fa-calculator"></i> Analytics</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <header class="dashboard-header">
+                <h1>Welcome to Your Dashboard</h1>
+                <p>Here's a quick overview of your business performance.</p>
+            </header>
+
+            <!-- Dashboard Overview Cards -->
+            <section class="overview-cards">
+                <div class="card">
+                    <h3>Total Sales</h3>
+                    <p>$150,000</p>
+                </div>
+                <div class="card">
+                    <h3>Total Orders</h3>
+                    <p>350</p>
+                </div>
+                <div class="card">
+                    <h3>Inventory Value</h3>
+                    <p>$80,000</p>
+                </div>
+                <div class="card">
+                    <h3>Pending Orders</h3>
+                    <p>25</p>
+                </div>
+                <div class="card">
+                    <h3>Approved Orders</h3>
+                    <p>25</p>
+                </div>
+                <div class="card">
+                    <h3>Canceled Orders</h3>
+                    <p>25</p>
+                </div>
+                <div class="card">
+                    <h3>Completed Orders</h3>
+                    <p>25</p>
+                </div>
+                <div class="card">
+                    <h3>Returned Orders</h3>
+                    <p>25</p>
+                </div>
+            </section>
+
+            <!-- Graph/Statistics Section -->
+            <section class="dashboard-stats">
+                <div class="chart-container">
+                    <h2>Monthly Sales Trend</h2>
+                    <!-- Placeholder for Chart -->
+                    <div class="chart-placeholder">
+                        <img src="chart-placeholder.jpg" alt="Sales Chart">
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <h2>Inventory Usage</h2>
+                    <!-- Placeholder for Chart -->
+                    <div class="chart-placeholder">
+                        <img src="inventory-chart-placeholder.jpg" alt="Inventory Chart">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Activity Section -->
+            <section class="recent-activity">
+                <h2>Recent Activity</h2>
+                <ul class="activity-list">
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>Order #1456 processed</span>
+                        <span class="timestamp">1 hour ago</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-truck"></i>
+                        <span>Inventory restocked for item #A234</span>
+                        <span class="timestamp">3 hours ago</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-user-plus"></i>
+                        <span>New user "John Doe" added to the system</span>
+                        <span class="timestamp">5 hours ago</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-calculator"></i>
+                        <span>Accounting report generated for July</span>
+                        <span class="timestamp">Yesterday</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span>Stock running low on item #B456</span>
+                        <span class="timestamp">2 days ago</span>
+                    </li>
+                </ul>
+            </section>
+            
+        </main>
+    </div>
+</body>
+</html>

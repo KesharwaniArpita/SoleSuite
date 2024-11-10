@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-header {
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffff;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo img {
+    width: 120px; /* Adjust this size based on your logo */
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+.admin-info {
+    display: flex;
+    align-items: center;
+    background-color: #91BDE5;
+    padding: 10px;
+    border: 5px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+
+}
+
+.admin-info span {
+    font-size: 1rem;
+    color: #555;
+    margin-right: 10px;
+    
+}
+
+.admin-info img.admin-icon {
+    width: 40px; /* Adjust size for the admin icon */
+    border-radius: 50%;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 20%;
+    background-color: #ffffff;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    color: #ffffff;
+    background-color: #91BDE5; /* Blue background on hover */
+}
+
+.sidebar ul li a img {
+    width: 19px; /* Adjust size as needed */
+    height: 18px; /* Maintain aspect ratio */
+    margin-right: 10px;
+    transition: filter 0.3s;
+}
+
+.sidebar ul li a:hover img {
+    filter: brightness(0) invert(1); /* Optional: Change image color on hover */
+}
+
+.sidebar ul li a span {
+    font-size: 1rem;
+}
+
+/* Active link styling */
+.sidebar ul li.active a,
+.sidebar ul li.active a img,
+.sidebar ul li.active a span {
+    color: #ffffff;
+    background-color: #91BDE5;
+}
+
+
+
+main {
+    width: 80%;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info {
+    font-size: 1rem;
+    color: #555;
+}
+
+.add-btn {
+    padding: 20px 30px; /* Adjust padding for desired size */
+    border: none;
+    border-radius: 100px; /* Makes the button elliptical */
+    background-color: #91BDE5; /* Button background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Changes the cursor to pointer on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.add-btn:hover {
+    background-color: #91BDE5; /* Darker shade on hover */
+}
+
+.username {
+    margin-left: 10px;
+    background-color: #91BDE5;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.search-bar input {
+    padding: 20px 30px;
+    border: 1px solid #91BDE5;
+    border-radius: 5px;
+    padding-right: 0;
+    background-color: #91BDE5;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.search-bar button {
+    margin-left: 0px;
+    padding: 20px 30px;
+    border: none;
+    background-color: #91BDE5;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.registration-form {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #E4E8E5;
+    border-radius: 10px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 0.2fr 0.6fr;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form select {
+    padding: 10px;
+    border: 1px solid #DAE0DB;
+    border-radius: 5px;
+    background-color: #DAE0DB;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.form-buttons {
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.close-btn, .register-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-btn {
+    background-color: #91BDE5;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.register-btn {
+    background-color: #91BDE5;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.logo img{
+    width: 200px; /* Adjust this value to increase the width */
+    height: auto; /* Ensures the aspect ratio is maintained */
+}
+
+.form-header{
+    padding-left: 300px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.erp-details-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.erp-details-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 500px;
+}
+
+.feature-block {
+    width: 45%;
+    padding: 20px;
+    margin: 20px;
+    background-color: #91BDE5;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.feature-block i {
+    font-size: 2rem;
+    color: #40E0D0;
+    margin-bottom: 15px;
+}
+
+.feature-block h3 {
+    margin-bottom: 15px;
+}
+
+.feature-block p {
+    font-size: 1rem;
+    color: #666;
+    padding: 10px;
+    padding-top: 50px;
+}
+
+/* Dashboard Statistics (Graphs or Charts) */
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.chart-container {
+    background-color: #f7f9fc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.chart-placeholder {
+    height: 200px;
+    background-color: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.chart-placeholder img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Enhanced Recent Activity Section */
+.recent-activity {
+    margin-bottom: 40px;
+}
+
+.recent-activity h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+/* Activity List */
+.activity-list {
+    list-style: none;
+    padding: 0;
+}
+
+.activity-list li {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effect */
+.activity-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Activity Icon */
+.activity-list li i {
+    margin-right: 15px;
+    color: #007bff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+/* Icon Hover Effect */
+.activity-list li:hover i {
+    color: #0056b3;
+}
+
+/* Activity Text */
+.activity-list li span {
+    font-size: 16px;
+    color: #333;
+    flex-grow: 1;
+}
+
+/* Timestamp */
+.activity-list li .timestamp {
+    font-size: 14px;
+    color: #999;
+    margin-left: auto;
+    padding-left: 20px;
+    border-left: 1px solid #e0e0e0;
+}
+
+/* Divider (Optional) */
+.activity-list li:not(:last-child) {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Improved Spacing and Typography */
+.recent-activity h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #444;
+}
+
+.activity-list li .timestamp:hover {
+    color: #666;
+}
